@@ -1,0 +1,14 @@
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: sclabs
+      POSTGRES_PASSWORD: sclabs
+      POSTGRES_DB: sclabs
+    ports: ["5432:5432"]
+    volumes: [db_data:/var/lib/postgresql/data]
+  adminer:
+    image: adminer
+    ports: ["8080:8080"]
+volumes:
+  db_data:

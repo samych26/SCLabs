@@ -1,0 +1,29 @@
+# Node
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Prisma
+backend/prisma/dev.db
+backend/prisma/.env
+
+# Env
+.env
+
+# Build
+dist
+build
+*.log
+
+# Editor
+.vscode/
+.idea/
+
+# Docker volumes
+**/postgres-data/
+**/tmp/
+
+# OS
+.DS_Store
+Thumbs.db
